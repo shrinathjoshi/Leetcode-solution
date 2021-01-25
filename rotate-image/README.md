@@ -1,3 +1,4 @@
+[Discussion Post (created on 25/0/2021 at 13:13)](https://leetcode.com/problems/rotate-image/discuss/?currentPage=1&orderBy=most_votes&query=)  
 <h2>48. Rotate Image</h2><h3>Medium</h3><hr><div><p>You are given an <em>n</em> x <em>n</em> 2D <code>matrix</code> representing an image, rotate the image by 90 degrees (clockwise).</p>
 
 <p>You have to rotate the image <a href="https://en.wikipedia.org/wiki/In-place_algorithm" target="_blank"><strong>in-place</strong></a>, which means you have to modify the input 2D matrix directly. <strong>DO NOT</strong> allocate another 2D matrix and do the rotation.</p>
