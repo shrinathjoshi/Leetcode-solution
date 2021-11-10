@@ -5,19 +5,28 @@ class Solution {
         int column =  matrix[0].length;
         if(column == 0) return false;
         
-        int i=0,j=column-1;
+        int left =0;
+        int right = rows*column -1;
         
-        while(j>=0  && i<=rows - 1){
-            if(matrix[i][j]==target){
+        
+        while(left <= right){
+            //int mid = left + (right - left)/2;
+            int mid = (left+right) >>> 1;
+            int rowMid = mid/column;
+            int columnMid = mid%column;
+            
+            int value = matrix[rowMid][columnMid];
+            
+            if(value == target){
                 return true;
             }
-            else if(matrix[i][j]<target){
-                i++;
+            else if(value<target) {
+                left = mid+1;
             }
-            else j--;
+            else
+                right = mid-1;
         }
         
         return false;
-        
     }
 }
